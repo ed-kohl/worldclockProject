@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
-    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.41/moment-timezone-with-data-1970-2030.js"
+        ></script>
+    <title>World Clock</title>
 </head>
 <body>
 
@@ -18,24 +21,24 @@
     <option value="">Tokyo</option>
 </select>
 
-<div class="city">
+<div class="city" id="firstCity">
    <div class="cityDate"><h2>Los Angeles</h2>
-<div class="date"> Augsut 12th</div>
+<div class="date"> August 12th</div>
 </div>
 <div class="time">1:48:45 <small>AM</small></div>
 </div>
 
-<div class="city">
-    <div class="cityDate">
-        <h2>Los Angeles</h2>
-        <div class="date"> Augsut 12th</div>
+<div class="city" id="secondCity">
+    <div class="cityDate" >
+        <h2>Berlin</h2>
+        <div class="date"> August 12th</div>
     </div>
     <div class="time">1:48:45 <small>AM</small></div>
 </div>
-<div class="city">
+<div class="city" id="thirdCity">
     <div class="cityDate">
-        <h2>Los Angeles</h2>
-        <div class="date"> Augsut 12th</div>
+        <h2>Tokyo</h2>
+        <div class="date"> August 12th</div>
     </div>
     <div class="time">1:48:45 <small>AM</small></div>
 </div>
