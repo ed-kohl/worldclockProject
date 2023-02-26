@@ -4,7 +4,7 @@ setInterval(function(){
 
 
 let firstCityElement=document.querySelector(`#firstCity`);
-if (firstCityElement){
+if (firstCityElement!==null){
 let firstCityElementDate=firstCityElement.querySelector(`.date`);
 let firstCityElementTime=firstCityElement.querySelector(`.time`);
 
@@ -18,7 +18,7 @@ setInterval(function(){
 //Berlin
 
 let secondCityElement=document.querySelector(`#secondCity`);
-if(secondCityElement){
+if(secondCityElement!==null){
 let secondCityElementDate=secondCityElement.querySelector(`.date`);
 let secondCityElementTime=secondCityElement.querySelector(`.time`);
 
@@ -33,7 +33,7 @@ setInterval(function(){
 //Tokyo
 
 let thirdCityElement=document.querySelector(`#thirdCity`);
-if (thirdCityElement){
+if (thirdCityElement!==null){
 let thirdCityElementDate=thirdCityElement.querySelector(`.date`);
 let thirdCityElementTime=thirdCityElement.querySelector(`.time`);
 
@@ -45,12 +45,12 @@ thirdCityElementTime.innerHTML= thirdCityTime.format(`h:mm:ss [<small>]A[</small
 
 
 function updateCity(event){
-    console.log(updateCity);
+    
     let cityTimeZone=event.target.value;
     let cityName=cityTimeZone.replace("_"," ").split(`/`)[1];
     let cityTime=moment().tz(cityTimeZone);
 
-    console.log(cityTime.format(`MMM Do YYYY`));
+    
     let citiesElement=document.querySelector(`#cities`);
 citiesElement.innerHTML=`
 <div class="city">
