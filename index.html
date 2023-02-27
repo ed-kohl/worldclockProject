@@ -10,38 +10,60 @@
         ></script>
     <title>World Clock</title>
 </head>
-<body>
+<body background="images/frame-3186088_1920.jpg">
 
     <div class="container">
-    <h1> <a href="https://courageous-axolotl-fd69b0.netlify.app/">World clock Project</a></h1>
+    <h1> <a href="https://courageous-axolotl-fd69b0.netlify.app/">World clock</a></h1>
 <select id="city" >
-    <option value=""> Select a city...</option>
+
+    <option value="" selected>Select a city...</option>
     <option value="current">Select current timezone</option>
+    <optgroup label="Europe" class="selectStyleElement">
     <option value="Europe/London" >London</option>
     <option value="Europe/Paris" >Paris</option>
-    <option value="Asia/Tokyo" >Tokyo</option>
+    <option value="Europe/Berlin">Berlin</option>
+    <option value="Europe/Rome">Rome</option>
+    </optgroup>
+    <optgroup label="Asia"class="selectStyleElement">
+    <option value="Asia/Tokyo"> Tokyo</option>
+    <option value="Asia/Dubai">Dubai</option>
+    <option value="Asia/Seoul">Seoul</option>
+    <option value="Asia/Kathmandu">Kathmandu</option>
+    </optgroup>
+<optgroup label="America" class="selectStyleElement">
+    <option value="America/Buenos_Aires" >Buenos Aires</option>
+    <option value="America/Chicago">Chicago</option>
+    <option value="America/Jamaica">Jamaica</option>
+    <option value="America/New_York">New York</option>
+</optgroup>
+<optgroup label="Africa"class="selectStyleElement">
+    <option value="Africa/Cairo">Cairo</option>
+    <option value="Africa/Dakar">Dakar</option>
+    <option value="Africa/Nairobi">Nairobi</option>
+    <option value="Africa/Johannesburg">Johannesburg</option>
+    </optgroup>
 </select>
 <div id="cities">
 <div class="city" id="firstCity">
-   <div class="cityDate"><h2>Los Angeles</h2>
-<div class="date"> August 12th</div>
+   <div class="cityDate"><h2>Tokyo</h2>
+<div class="date"> </div>
 </div>
-<div class="time">1:48:45 <small>AM</small></div>
+<div class="time"><small></small></div>
 </div>
 
 <div class="city" id="secondCity">
     <div class="cityDate" >
         <h2>Berlin</h2>
-        <div class="date"> August 12th</div>
+        <div class="date"> </div>
     </div>
-    <div class="time">1:48:45 <small>AM</small></div>
+    <div class="time"> <small></small></div>
 </div>
 <div class="city" id="thirdCity">
     <div class="cityDate">
-        <h2>Tokyo</h2>
-        <div class="date"> August 12th</div>
+        <h2>Los Angeles</h2>
+        <div class="date"> </div>
     </div>
-    <div class="time">1:48:45 <small>AM</small></div>
+    <div class="time"><small></small></div>
 </div>
 </div>
 
@@ -49,7 +71,8 @@
 
 </div>
     <footer>
-        This project was coded by Edeltraud Kohl, find it 
+        This project was coded by Edeltraud Kohl in February 2023,
+        <br> find it 
         <a href="https://github.com/ed-kohl/worldclockProject" target="_blank" title="find the project on GitHub">here on GitHub</a>
     </footer>
     <script src="src/script.js"></script>

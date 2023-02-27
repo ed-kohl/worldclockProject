@@ -7,7 +7,8 @@
     background-color:white;
     padding:60px;
     margin-top:30px;
-    box-shadow: 5px 10px 10px blueviolet;
+    box-shadow: 25px 25px 25px #7d6d55;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .city{
@@ -15,7 +16,7 @@
     justify-content:space-between;
     margin-top:10px;
     padding:10px 0;
-    border-bottom:1px dashed lightcoral;
+    border-bottom:1px dashed #59a0ac;
     
 }
 
@@ -28,12 +29,16 @@
 .cityDate{
     margin-top:0;
     padding:0 0 0 0;
+    color:#626c76;
+    
 }
 
 .time{
-    font-size:36px;
+    font-size:34px;
     font-weight:bold;
     padding-top:0px;
+    color:#709199;
+    
 }
 
 .time small{
@@ -41,6 +46,13 @@
     vertical-align:middle;
     line-height:36px;
 }
+.selectStyleElement
+{
+background-color:#bdcfcf;
+font-style:italic;
+
+}
+
 
 select{
     display:block;
@@ -53,19 +65,23 @@ h1{
     text-align:center;
     font-family:Arial, Helvetica, sans-serif;
     font-size:40px;
+    color:#556d71;
+}
+h1 a{
+   text-decoration:none; 
+   color: #556d71;
 }
 
 h2{
     margin-top:0;
+    color:#626c76;
 }
-
-body{
-    background-color:lightgrey;
-}
-
 
 footer{
     max-width:50%;
     margin:0 auto;
     margin-top:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:16px;
+    font-style:italic;
 }

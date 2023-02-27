@@ -1,6 +1,6 @@
 setInterval(function(){
 
-//Los Angeles
+//Tokyo
 
 
 let firstCityElement=document.querySelector(`#firstCity`);
@@ -8,7 +8,7 @@ if (firstCityElement!==null){
 let firstCityElementDate=firstCityElement.querySelector(`.date`);
 let firstCityElementTime=firstCityElement.querySelector(`.time`);
 
-let firstCityTime=moment().tz(`America/Los_Angeles`);
+let firstCityTime=moment().tz(`Asia/Tokyo`);
 
 firstCityElementDate.innerHTML= firstCityTime.format(`MMMM Do YYYY`);
 firstCityElementTime.innerHTML= firstCityTime.format(`h:mm:ss [<small>]A[</small>]`);
@@ -30,14 +30,14 @@ secondCityElementTime.innerHTML= secondCityTime.format(`h:mm:ss [<small>]A[</sma
 
 setInterval(function(){
 
-//Tokyo
+//Los Angeles
 
 let thirdCityElement=document.querySelector(`#thirdCity`);
 if (thirdCityElement!==null){
 let thirdCityElementDate=thirdCityElement.querySelector(`.date`);
 let thirdCityElementTime=thirdCityElement.querySelector(`.time`);
 
-let thirdCityTime=moment().tz(`Asia/Tokyo`);
+let thirdCityTime=moment().tz(`America/Los_Angeles`);
 
 thirdCityElementDate.innerHTML= thirdCityTime.format(`MMMM Do YYYY`);
 thirdCityElementTime.innerHTML= thirdCityTime.format(`h:mm:ss [<small>]A[</small>]`);}
@@ -47,10 +47,12 @@ thirdCityElementTime.innerHTML= thirdCityTime.format(`h:mm:ss [<small>]A[</small
 function updateCity(event){
     
     let cityTimeZone=event.target.value;
+   
     if (cityTimeZone==="current"){
         cityTimeZone=moment.tz.guess();
     }
     let cityName=cityTimeZone.replace("_"," ").split(`/`)[1];
+   
     let cityTime=moment().tz(cityTimeZone);
 
     
@@ -58,7 +60,7 @@ function updateCity(event){
 citiesElement.innerHTML=`
 <div class="city">
 <div>
-<h2>${cityTimeZone}</h2>
+<h2>${cityName}</h2>
 <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
 </div>
 <div>
